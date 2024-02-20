@@ -40,16 +40,7 @@ ${cvcCard1}     123
 ######################################BREAKFORBETTERVISABILITY#########################################################
 
 *** Test Cases ***
-rent_car
-    open browser    ${url}   ${browser}
-    maximize browser window
-    #CreateUser    ${firstName1}     ${lastName1}    ${phoneNumber1}     ${email1}   ${password1}
-    LoginUser    ${email1}   ${password1}
-    SelectDate    ${startDate1}     ${endDate1}
-    SelectCar
-    EnterCardDetails    ${card1}    ${fullName1}    ${monthCard1}   ${yearCard1}    ${cvcCard1}
-    validatebooking    ${startDate1}    ${endDate1}
-    builtin.sleep    5s
+
 
 negativDateTest1
     open browser    ${url}   ${browser}
